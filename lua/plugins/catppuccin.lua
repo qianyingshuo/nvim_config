@@ -107,7 +107,7 @@ Spec.config = function(name, info)
 
   ---@type string | "latte" | "frappe" | "macchiato" | "mocha"
   vim.g.catppuccin_flavour = "mocha"
-  vim.cmd [[colorscheme catppuccin]]
+  vim.cmd [[colorscheme desert]]
 end
 
 return Spec

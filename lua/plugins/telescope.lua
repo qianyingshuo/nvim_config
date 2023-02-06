@@ -6,9 +6,9 @@ Spec.requires = {
   "nvim-telescope/telescope-symbols.nvim",
 }
 
-Spec.module = {
-  "telescope",
-}
+-- Spec.module = {
+--   "telescope",
+-- }
 
 ---@param name string
 ---@param info PluginInfo

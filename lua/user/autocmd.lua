@@ -44,3 +44,13 @@ autocmd({ "WinLeave", "InsertEnter" }, {
   group = group,
   command = "let &l:rnu = v:false",
 })
+
+--vim.cmd([[
+--    au FileType cpp nnoremap gk :call setreg('t',strftime("%c",localtime()))<CR>O /** add by zhourp <CR><SPACE>*/<esc>3h"tpko
+--    au FileType c nnoremap gk :call setreg('t',strftime("%c",localtime()))<CR>O /** add by zhourp <CR><SPACE>*/<esc>3h"tpko
+--    au FileType lua nnoremap gk :call setreg('t',strftime("%c",localtime()))<CR>O --\[\[ add by zhorp <CR><SPACE>\]\]--<esc>4h"tpko
+--    au FileType python nnoremap gk :call setreg('t',strftime("%c",localtime()))<CR>O""" add by zhourp <CR><SPACE><CR>"""<esc>3hx<esc>k"tpko
+--    au FileType sql nnoremap gk :call setreg('t',strftime("%c",localtime()))<CR>O/* add by zhourp <CR><SPACE>*/<esc>^h"tpko
+--    nnoremap <silent> <F4> :UndotreeToggle<CR>
+--    nnoremap <silent> gp :lua vim.lsp.buf.hover()<CR>
+--]])

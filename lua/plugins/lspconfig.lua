@@ -88,7 +88,21 @@ Spec.config = function(name, info)
 
   -- for clangd
   require("clangd_extensions").setup {
-    server = default_config,
+    server = {
+      settings = {
+        clangd = {
+          fallbackFlags = {"--enable-config", "--clang-tidy"},
+        }
+      }
+    },
+    extensions = {
+        memory_usage = {
+            border = "none",
+        },
+        symbol_info = {
+            border = "none",
+        },
+    },
   }
 
   -- other server installed with mason.

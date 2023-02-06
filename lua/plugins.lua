@@ -40,6 +40,7 @@ local spec = function(use, use_rocks)
   use(plugins["trouble"])
   use(plugins["notify"])
   use(plugins["which-key"])
+  use(plugins["dashboard"])
 
   -- colorscheme
   use(plugins["catppuccin"])
@@ -48,6 +49,15 @@ local spec = function(use, use_rocks)
   use { "dstein64/vim-startuptime", cmd = "StartupTime" }
   use "lewis6991/impatient.nvim"
   use "gpanders/editorconfig.nvim"
+  use "mbbill/undotree"
+  use { "vim-scripts/DoxygenToolkit.vim", config = function ()
+    vim.g.DoxygenToolkit_briefTag_pre="@brief  "
+    vim.g.DoxygenToolkit_paramTag_pre="@Param "
+    vim.g.DoxygenToolkit_returnTag="@Returns   "
+    vim.g.DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
+    vim.g.DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
+    vim.g.DoxygenToolkit_authorName="zhourp"
+  end}
 
   -- vallina plugins
   use "honza/vim-snippets"
