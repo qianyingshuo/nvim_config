@@ -16,53 +16,53 @@ Spec.config = function(name, info)
     return string.format("%-" .. width .. "s", text)
   end
 
-  db.custom_header = {
-'    ______,          ..--------..        ..--------..     ..-------..               ...""""""...    ',
-'   /       \\         ||         \\      //         ||    //         \\          ..""            \\   ',
-'  /       _/         ||          \\    //    |     ||   //     |     \\      ..""              _|_ ',
-' /                   ||           \\  //     |     ||  //   ___|___   \\  ..""                 /-\\ ',
-'|    _____           ||            \\//      |     || //       |       \\/                          ',
-' \\    |   \\   ____   ||     --------::--------     ||//        |        \\        _______           ',
-'  \\___|    | /    \\  ||     |      //\\            ||\\        |        //"..           /\\          ',
-'           |/      \\ ||     |     //  \\           || \\               //   ""..       /  \\         ',
-'            \\      / ||     |    //    \\          ||  \\             //       ""..   /    \\        ',
-'             \\____/  ||         //      \\         ||   \\           //           ""_/      \\___    ',
-'                     ""--------""        ""--------""    ""---------""                           ',
-  }
+--   db.custom_header = {
+-- '    ______,          ..--------..        ..--------..     ..-------..               ...""""""...    ',
+-- '   /       \\         ||         \\      //         ||    //         \\          ..""            \\   ',
+-- '  /       _/         ||          \\    //    |     ||   //     |     \\      ..""              _|_ ',
+-- ' /                   ||           \\  //     |     ||  //   ___|___   \\  ..""                 /-\\ ',
+-- '|    _____           ||            \\//      |     || //       |       \\/                          ',
+-- ' \\    |   \\   ____   ||     --------::--------     ||//        |        \\        _______           ',
+-- '  \\___|    | /    \\  ||     |      //\\            ||\\        |        //"..           /\\          ',
+-- '           |/      \\ ||     |     //  \\           || \\               //   ""..       /  \\         ',
+-- '            \\      / ||     |    //    \\          ||  \\             //       ""..   /    \\        ',
+-- '             \\____/  ||         //      \\         ||   \\           //           ""_/      \\___    ',
+-- '                     ""--------""        ""--------""    ""---------""                           ',
+--   }
 
-  db.custom_center = {
-    {
-      icon = "  ",
-      desc = title "New File",
-      action = db.new_file,
-    },
-    {
-      icon = "  ",
-      desc = title "Find Files",
-      action = function()
-        require("telescope.command").load_command "find_files"
-      end,
-    },
-    {
-      icon = "  ",
-      desc = title "Recent Files",
-      action = function()
-        require("telescope.command").load_command "oldfiles"
-      end,
-    },
-    {
-      icon = "  ",
-      desc = title "Packer Sync",
-      action = function()
-        require("plugins").sync()
-      end,
-    },
-    {
-      icon = "  ",
-      desc = title "Quit Nvim",
-      action = "qall",
-    },
-  }
+  -- db.custom_center = {
+  --   {
+  --     icon = "  ",
+  --     desc = title "New File",
+  --     action = db.new_file,
+  --   },
+  --   {
+  --     icon = "  ",
+  --     desc = title "Find Files",
+  --     action = function()
+  --       require("telescope.command").load_command "find_files"
+  --     end,
+  --   },
+  --   {
+  --     icon = "  ",
+  --     desc = title "Recent Files",
+  --     action = function()
+  --       require("telescope.command").load_command "oldfiles"
+  --     end,
+  --   },
+  --   {
+  --     icon = "  ",
+  --     desc = title "Packer Sync",
+  --     action = function()
+  --       require("plugins").sync()
+  --     end,
+  --   },
+  --   {
+  --     icon = "  ",
+  --     desc = title "Quit Nvim",
+  --     action = "qall",
+  --   },
+  -- }
 end
 
 return Spec

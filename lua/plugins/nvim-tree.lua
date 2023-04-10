@@ -6,7 +6,7 @@ Spec.requires = {
 }
 
 Spec.module_pattern = {
-  "^nvim%-tree$",
+  "^nvim%-tree%.api$",
 }
 
 ---@param name string

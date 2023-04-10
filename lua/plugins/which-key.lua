@@ -80,7 +80,7 @@ Spec.config = function(name, info)
     i = { "<cmd>lua require'trouble'.open'lsp_implementations'<cr>", "List implementations" },
     r = { "<cmd>lua require'trouble'.open'lsp_references'<cr>", "List references" },
     O = { "<cmd>lua require'symbols-outline'.open_outline()<cr>", "Outline" },
-    f = { "<cmd>lua require'nvim-tree'.toggle()<cr>", "NvimTree" },
+    f = { "<cmd>lua require'nvim-tree.api'.tree.toggle()<cr>", "NvimTree" },
   }, { prefix = "g" })
 
   wk.register({
