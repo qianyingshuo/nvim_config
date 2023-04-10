@@ -81,6 +81,7 @@ Spec.config = function(name, info)
     r = { "<cmd>lua require'trouble'.open'lsp_references'<cr>", "List references" },
     O = { "<cmd>lua require'symbols-outline'.open_outline()<cr>", "Outline" },
     f = { "<cmd>lua require'nvim-tree.api'.tree.toggle()<cr>", "NvimTree" },
+    p = { "<cmd>lua vim.lsp.buf.hover()<cr>", "Peek the definitions under cursor" },
   }, { prefix = "g" })
 
   wk.register({

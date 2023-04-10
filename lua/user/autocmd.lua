@@ -52,5 +52,4 @@ vim.cmd([[
     au FileType python nnoremap gk :call setreg('t',strftime("%c",localtime()))<CR>O""" add by zhourp <CR><SPACE><CR>"""<esc>3hx<esc>k"tpko
     au FileType sql nnoremap gk :call setreg('t',strftime("%c",localtime()))<CR>O/* add by zhourp <CR><SPACE>*/<esc>^h"tpko
     nnoremap <silent> <F4> :UndotreeToggle<CR>
-    nnoremap <silent> gp :lua vim.lsp.buf.hover()<CR>
 ]])
